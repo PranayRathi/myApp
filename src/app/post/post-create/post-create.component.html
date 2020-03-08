@@ -1,7 +1,10 @@
   <!---two way bounding-->
   <mat-card>
     <mat-form-field>
-      <textarea matInput rows="6" [value] = "'Test'" [(ngModel)]="enteredValue"></textarea>
+      <input matInput type = "text" [(ngModel)]= "enteredTitle">
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput rows="6" [value] = "'Test'" [(ngModel)] = "enteredContent"></textarea>
     </mat-form-field>
     <hr>
     <button
@@ -9,6 +12,4 @@
       color = 'primary'
       (click)= "onAddPost()">Save Post</button>
   </mat-card>
-  <!--string Interpolation -->
-  <p>{{newPost}}</p>
 
