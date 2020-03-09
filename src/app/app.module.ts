@@ -24,6 +24,7 @@ import { PostListComponent } from './post/post-list/post-list.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
